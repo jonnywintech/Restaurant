@@ -11,7 +11,7 @@ const MealItemForm = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     const enteredAmount = amountInputRef.current.value;
-    const eneteredAmount = +enteredAmount; // convert string to number
+    const enteredAmountNumber = +enteredAmount; // convert string to number
 
     if (enteredAmount.trim() === 0 || enteredAmount < 1 || enteredAmount > 5) {
       setAmountIsValid(false);
